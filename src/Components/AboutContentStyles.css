@@ -7,16 +7,54 @@
     flex-wrap: wrap;
     height: 100%;
 }
+/* Add this to your AboutContentStyles.css file or your styling file */
 
+.certifications {
+    color: white;
+    margin-left: 10vw;
+    width: 35vw;
+}
+
+ .certifications h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+ .certifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ .certifications li {
+    margin: 0.5em 0;
+    text-align: justify;
+        word-wrap: break-word;
+        hyphens: auto;
+}
+
+ .certifications li::before {
+    content: "\2022";
+    /* Unicode character for a bullet point */
+    color: white;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
 .about .left{
     text-align: center;
-    max-width: 350px;
+    max-width: 500px;
     margin: auto;
     padding: 1rem;
 }
-.about .left p{
+.about .left p {
     margin: 1.2rem 0;
+    text-align: justify;
+        word-wrap: break-word;
+        hyphens: auto;
 }
+
 .about .right{
     max-width: 700px;
 }
@@ -42,4 +80,40 @@
     grid-row: 1;
    
     z-index: 5;
+}
+.about .certifications.experience {
+    color: white;
+    margin-top: 20px;
+}
+.experience{
+    margin-left: 10vw;
+        width: 35vw;
+}
+.experience h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5em;
+}
+
+.experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+.experience li {
+    margin: 1em 0;
+}
+
+.experience li::before {
+    content: "\2022";
+    /* Unicode character for a bullet point */
+    color: white;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.experience p {
+    margin: 0.5em 0;
+    color: #cccccc;
+    /* A light gray color for the paragraphs */
 }
